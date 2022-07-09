@@ -1,7 +1,7 @@
 {
   "name": "blog-tutorial-df78",
   "private": true,
-  "homepage": "https://ninakru.github.io/my-app",
+  "homepage": "https://ninakru.github.io",
   "sideEffects": false,
   "scripts": {
     "build": "run-s build:*",
