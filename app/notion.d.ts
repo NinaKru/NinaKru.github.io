@@ -349,13 +349,12 @@ type SubDecorationValue<T extends SubDecorationSymbol> = Extract<
   [T, any]
 >[1];
 
-export type CustomDecoratorComponentProps<
-  T extends SubDecorationSymbol
-> = (SubDecorationValue<T> extends never
-  ? {}
-  : {
-    decoratorValue: SubDecorationValue<T>;
-  }) & {
+export type CustomDecoratorComponentProps<T extends SubDecorationSymbol> =
+  (SubDecorationValue<T> extends never
+    ? {}
+    : {
+        decoratorValue: SubDecorationValue<T>;
+      }) & {
     renderComponent: () => JSX.Element | null;
   };
 
