@@ -2,7 +2,7 @@ import { useLoaderData } from "@remix-run/react";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node"
 import { getPosts } from "~/models/post.server"
-import { Text } from '@mantine/core';
+import { Text, Container, Box } from '@mantine/core';
 
 type loaderData = {
     posts: Awaited<ReturnType<typeof getPosts>>
@@ -18,9 +18,11 @@ function BlockElement({ element }: { element: any }) {
     const properties = [...rich_text].pop();
     const { type, text, annotations, href } = properties;
     return (
-        <div>
-            <Text weight={500}>{text.content}</Text>
-        </div >
+        <Box color={color === "default" ? "black" : color}>
+            <p>{type}</p>
+            <a href={href}>
+                <Text weight={annotations.bold ? 500 : 100}>{text.content}</Text></a>
+        </Box >
     )
 }
 
@@ -34,8 +36,8 @@ export default function PostRoute() {
     )
     )
     return (
-        <div>
+        <Container>
             {listing}
-        </div>
+        </Container>
     )
 }

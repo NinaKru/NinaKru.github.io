@@ -33,17 +33,6 @@ export async function getBlock(block_id: string) {
     }
     )
 
-    console.log(pickData)
-
-    /*   let heading = pickData.heading_1.rich_text.reduce((acc: any, curr: { type: any; text: any; annotations: any }) => {
-          return {
-              ...acc,
-              [curr.type]: curr.text,
-              annotations: { ...curr.annotations },
-          }
-      }, {})
-   */
-
 
     const posts = [
         {

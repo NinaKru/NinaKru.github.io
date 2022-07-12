@@ -1,5 +1,4 @@
 
-import type { BlockValueType } from "~/notion";
 import notion from "~/notion.server"
 
 /**
