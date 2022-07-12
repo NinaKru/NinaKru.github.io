@@ -28,6 +28,14 @@ Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --
 
 ## Quickstart
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 Click this button to create a [Gitpod](https://gitpod.io) workspace with the project set up and Fly pre-installed
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
