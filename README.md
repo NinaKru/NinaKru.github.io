@@ -74,7 +74,6 @@ This is a pretty simple note-taking app, but it's a good example of how you can 
 - creating users, and logging in and out [./app/models/user.server.ts](./app/models/user.server.ts)
 - user sessions, and verifying them [./app/session.server.ts](./app/session.server.ts)
 - creating, and deleting notes [./app/models/note.server.ts](./app/models/note.server.ts)
-
 ## Deployment
 
 This Remix Stack comes with two GitHub Actions that handle automatically deploying your app to production and staging environments.
